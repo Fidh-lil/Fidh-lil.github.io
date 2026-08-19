@@ -1,0 +1,287 @@
+/* Basic page styling */
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f5edff;
+    color: #3b1f4a;
+}
+
+/* Header */
+
+header {
+    background: linear-gradient(135deg, #4b0082, #800080, #9932cc);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+header p {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #3b0764;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #7e22ce;
+    color: #ffffff;
+}
+
+/* Main content */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Sections */
+
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #e9d5ff;
+    box-shadow: 0 5px 15px rgba(107, 33, 168, 0.12);
+}
+
+/* Headings */
+
+h2 {
+    color: #6b21a8;
+    border-bottom: 3px solid #9333ea;
+    padding-bottom: 8px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h3 {
+    color: #7e22ce;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Paragraphs */
+
+p {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Lists */
+
+li {
+    color: #4c1d5f;
+    font-weight: bold;
+    font-style: italic;
+}
+
+li::marker {
+    color: #9333ea;
+}
+
+/* Projects */
+
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #d8b4fe;
+    border-left: 5px solid #9333ea;
+    border-radius: 8px;
+    background-color: #faf5ff;
+    transition: 0.3s;
+}
+
+article:hover {
+    background-color: #f3e8ff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(107, 33, 168, 0.2);
+}
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #d8b4fe;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+}
+
+th {
+    background-color: #7e22ce;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #faf5ff;
+}
+
+tr:hover {
+    background-color: #f3e8ff;
+}
+
+/* Form */
+
+form {
+    max-width: 600px;
+    background-color: #faf5ff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #e9d5ff;
+}
+
+label {
+    color: #581c87;
+    font-weight: bold;
+    font-style: italic;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+
+    border: 2px solid #d8b4fe;
+    border-radius: 6px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #9333ea;
+    box-shadow: 0 0 6px rgba(147, 51, 234, 0.3);
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+/* Button */
+
+button {
+    background: linear-gradient(135deg, #6b21a8, #9333ea);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    border-radius: 7px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    font-style: italic;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #4c1d95, #7e22ce);
+    transform: scale(1.05);
+    box-shadow: 0 5px 12px rgba(107, 33, 168, 0.3);
+}
+
+/* Links */
+
+a {
+    color: #7e22ce;
+    font-weight: bold;
+    font-style: italic;
+}
+
+a:hover {
+    color: #4c1d95;
+}
+
+/* Map */
+
+iframe {
+    max-width: 100%;
+    border: 3px solid #d8b4fe !important;
+    border-radius: 8px;
+}
+
+/* Footer */
+
+footer {
+    background: linear-gradient(135deg, #3b0764, #581c87);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid #d8b4fe;
+}
+
+footer p {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
